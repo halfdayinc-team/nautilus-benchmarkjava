@@ -36,5 +36,5 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.NAUTILUS2_TOKEN }}
-          SONAR_HOST_URL: ${{ varss.NAUTILUS2_HOST_URL }}
+          SONAR_HOST_URL: ${{ vars.NAUTILUS2_HOST_URL }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=halfdayinc-team_nautilus-benchmarkjava_8ffe9dcc-23af-46ae-913e-85dcdbeb3d33 -Dsonar.projectName='nautilus-benchmarkjava'
